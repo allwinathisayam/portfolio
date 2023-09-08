@@ -1,0 +1,178 @@
+* { margin:0; padding: 0; box-sizing: border-box; }
+body {
+    overflow: hidden;
+}
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 111;
+    height: 80px;
+    line-height: 80px;
+}
+#header .logo {
+    float: left;
+}
+#header .logo img {
+    width: 100px;
+    padding: 20px;
+}
+#header .nav1 ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#header .nav1 ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+#header .nav1 li a {
+    font-size: 25px; 
+    color: #222e35;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#header .nav1 ul li:hover a,  
+#header .links a:hover {
+   color: #7f00ff;
+}
+#header .links a  {
+    font-size: 30px;
+    color: #222e35;
+    margin: 25px 10px;
+}
+#pagecontent img {
+    margin-left: 55%;
+    position: absolute;
+    animation: animateuser1 4s linear infinite;
+}
+@keyframes animateuser1 {
+    50% {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+#pagecontent .content1 {
+    height: 100%;
+    width: 60%;
+    padding-left: 100px;
+    float: left;
+    padding-top: 200px;
+}
+#pagecontent .content1 img {
+    position: relative;
+    width: 35%;
+    float: right;
+}
+#pagecontent .content1 .topline {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #222e35;
+}
+#pagecontent .content1 h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: #222e35;
+}
+#pagecontent .content1 .multitext {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+#pagecontent .content1 p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d3d3d;
+}
+#pagecontent .content1 .btns {
+    width: 100%;
+    position: absolute;
+    left: 150px;
+}
+#pagecontent .content1 .btns button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color:#222e35;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+#pagecontent .content1 .btns button:hover {
+    background-color: #7f00ff;
+}
+#pagecontent .content1 .btns button a {
+    text-decoration: none;
+    color: #fff;
+}
+.bg {
+    position: relative;
+    float: right;
+    width: 40%;
+}
+.bg img {
+    width: 100%;
+    float: right;
+    animation: animateuser 4s linear infinite;
+}
+@keyframes animateuser {
+    50% {
+        top: 46%;
+        left: 49%;
+        width: 105%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #pagecontent .content1 {
+        padding-top: 50px;
+    }
+    #header .nav1 li a {
+        font-size: 90%;
+    }
+    #pagecontent img {
+        margin-left: 44%;
+    }
+
+
+}
+@media only screen and (max-width: 640px) {
+    #header .nav1 ul {
+        display: none;
+    }
+    #pagecontent img {
+        margin-left: 30%;
+        width: 75%;
+    }
+    .bg img {
+        width: 200%;
+        margin-left: -60%;
+        animation: animateuser2 4s linear infinite;
+    }
+    @keyframes animateuser2 {
+        50% {
+            top: 96%;
+            left: 99%;
+            width: 205%;
+        }
+    }  
+    #pagecontent .content1 {
+        padding-top: 270px;
+        padding-left: 5%;
+    }
+    #pagecontent .content1 .btns {
+        left: 10%;
+    }
+    #header {
+        justify-content: space-between;
+    }
+}
+

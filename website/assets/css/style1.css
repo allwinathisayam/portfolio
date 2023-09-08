@@ -1,0 +1,311 @@
+* { margin:0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #e6e6e6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+
+    margin: 0 auto;
+}
+.pageheader {
+    color: #fff;
+    background-color: #05214e;
+    padding: 15px;  
+}
+.pageheader img {
+    width: 110px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 110px;
+    margin-right: 20px;
+}
+.pageheader .bt {
+    display: none;
+}
+
+.pageheader h1 {
+    font-size: 40px;
+    padding-left: 120px;
+    font-family: "Courgette";
+}
+.pageheader h3 {
+    font-family: "Audiowide", sans-serif;
+}
+.pagecontent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.pagecontent .rightcontent-responsive {
+    display: none;
+}
+.pagecontent .rightcontent {
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pagecontent .rightcontent p {
+    font-family: 'Coda';
+}    
+.pagecontent .leftcontent {
+    padding: 15px;
+}
+.pagecontent .leftcontent p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    font-family: Stardos Stencil;
+    font-size: 20px;
+ }
+ @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.pagecontent .rightcontent h3 {
+    padding-top: 15px;
+    font-family: 'Stardos Stencil';
+}
+.pagecontent .rightcontent h2 {
+    border-bottom: 1px solid #d4d6d5;
+    padding-top: 15px;
+    font-family: Bangers;
+    letter-spacing: 2px;
+}
+.pagecontent .rightcontent a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Coda';
+}
+.leftcontent .projects {
+    padding-top: 10px;
+}
+.pagecontent .leftcontent .projects h2 {
+    border-bottom: 1px solid #d4d6d5;
+    font-family: Bangers;
+    letter-spacing: 2px;
+}
+.pagecontent .leftcontent .projects a {
+    text-decoration: none;
+}
+.pagecontent .leftcontent .projects a h6 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 200px;
+    font-family: Stardos Stencil;
+}
+.pagecontent .leftcontent .workhistory h2 {
+    border-bottom: 1px solid #d4d6d5;
+    font-family: Bangers;
+    letter-spacing: 2px;
+}
+.pagecontent .leftcontent .workhistory .wrkleft {
+    float: left;
+    padding-top: 34px;
+}
+.pagecontent .leftcontent .workhistory .wrkleft h4 {
+    font-family: 'Coda';
+    font-weight: 600;
+}
+.pagecontent .leftcontent .workhistory .wrkright {
+    padding-top: 20px;
+    padding-left: 200px;
+}
+.pagecontent .leftcontent .workhistory .wrkright h3 {
+    font-family: Norican;
+    font-size: 28px;
+}
+.pagecontent .leftcontent .workhistory .wrkright p {
+    font-style: italic;
+    font-family: Coda;
+}
+.pagecontent .leftcontent .education h2 {
+    border-bottom: 1px solid #d4d6d5;
+    font-family: Bangers;
+    letter-spacing: 2px;
+}
+.leftcontent .education .edu1 {
+    padding-top: 40px;  
+    background-color: ghostwhite;  
+}
+.pagecontent .leftcontent .education .eduleft {
+    float: left;
+}
+.pagecontent .leftcontent .education .eduleft h4 {
+    font-family: 'Coda';
+    font-weight: 600;
+}
+.pagecontent .leftcontent .education .eduright {
+    padding-left: 200px;
+}
+.pagecontent .leftcontent .education .eduright h3 {
+    font-family: 'Stardos Stencil';
+}
+.pagecontent .leftcontent .education .eduright p span {
+    font-weight: 600;
+}
+.pagecontent .leftcontent .education .eduright p {
+    font-style: italic;
+    font-family: 'Coda';
+}
+.rightcontent .skills {
+    padding-top: 30px;
+}
+.rightcontent .skills .skname {
+    float: left;
+}
+.rightcontent .skills .skname h6 {
+    font-size: 16px;
+    padding-top: 40px;
+    font-weight: 400;
+    font-family: 'Stardos Stencil';
+}
+.rightcontent .skills .skper {
+    float: right;
+}
+.rightcontent .skills .skper h4 {
+    text-align: end;
+    font-family: Stardos Stencil;
+}
+.rightcontent .skills .skper img {
+    padding-top: 30px;
+}
+.rightcontent-responsive h3 {
+    text-align: center;
+    padding: 20px;
+}
+.rightcontent-responsive p {
+    text-align: center;
+}
+.rightcontent-responsive li {
+    text-align: center;
+    list-style: none;
+}
+.rightcontent-responsive li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.rightcontent-responsive .skills {
+   
+}
+.rightcontent-responsive .skills div {
+    text-align: center;
+    padding: 5%;
+    float: left;
+    width: 50%;
+}
+
+@media only screen and (max-width: 640px) {
+    .pageheader img {
+        float: none;
+        margin-left: 41%;
+    }
+    #pageheader .bt {
+        float: right;
+    }
+    #pageheader .bt img {
+        float: right;
+        
+    }
+    .leftcontent p {
+       white-space: inherit;
+    }
+    .pageheader .bt img {
+        margin-top: -100px;
+    }
+    .pageheader h1,h3 {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .pageheader h3 {
+        text-align: center;
+    }
+    .pageheader button {
+        display: contents;
+        justify-content: end;
+    }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    }
+    .pageheader .navbar-toggler-icon img {
+        margin-top: -160px;
+        float: right;
+        width: 60px;
+        height: 60px;
+    }
+    .pagecontent .leftcontent .workhistory .wrkleft {
+        float: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .pagecontent .leftcontent .workhistory .wrkright {
+        padding: 0;
+        text-align: center;
+    }
+    .pagecontent .leftcontent .education h2 {
+        text-align: center;
+        padding-top: 40px;
+    }
+    .pagecontent .leftcontent .education .eduleft {
+        float: none;
+        text-align: center;
+    }
+    .pagecontent .leftcontent .education .eduright {
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .pagecontent .leftcontent p {
+        overflow: auto;
+    }
+    .rightcontent-responsive .skills {
+        
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    .pagecontent .rightcontent {
+        content-visibility: hidden;
+        background: none;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+    .pagecontent {
+        display: inline-block;
+    }
+    .pageheader .bt {
+        display: contents;
+        float: right;
+        background-image: url(../img/three1.jpg);
+    }
+    .pageheader .bt button {
+        width: 45px;
+        height: 40px;
+        background-color: white;
+        margin: 6px 0;
+        float: right;
+  
+    }
+    
+    .pageheader .bt div {
+        border: black 3px solid;
+        padding: 3px;
+    }
+    .pageheader .bt img {
+        float: right;
+        height: 41px;
+        width: 50px;
+        
+    }
+    .leftcontent p {
+        align-items: center;
+    }
+    .pagecontent .rightcontent-responsive {
+        display: contents;
+    } 
+}
